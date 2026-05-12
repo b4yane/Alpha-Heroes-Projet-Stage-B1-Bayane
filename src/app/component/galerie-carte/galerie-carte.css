@@ -1,3 +1,12 @@
+.galerie-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  gap: 30px; 
+  justify-content: center; 
+  padding: 40px 20px;
+}
+
 .galerie-carte {
   background-color: #ffffff;
   border-radius: 15px;       
