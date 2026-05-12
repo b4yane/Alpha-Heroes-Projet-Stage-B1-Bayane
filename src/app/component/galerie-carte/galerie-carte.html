@@ -1,0 +1,22 @@
+@for (hero of listeHeros; track hero.nom)
+{
+    <article class="galerie-carte" (click)="selectionnerHero(hero)">
+      <figure class="item-image">
+          <img [src]="hero.image" [alt]="hero.nom" />
+      </figure>
+
+      <header class="item-header">
+          <h2 class="item-name">{{ hero.nom }}</h2>
+      </header>
+
+      <p class="item-identite-s">{{ hero.identiteSecrete }}</p>
+      <p class="item-description">{{ hero.descriptionCourte }}</p>
+      
+      <footer>
+          <p class="item-localisation">{{ hero.localisation }}</p>
+      </footer>
+  </article>
+
+}
+
+<app-hero-detail [hero]="heroSelectionne"></app-hero-detail>
