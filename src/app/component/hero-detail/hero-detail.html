@@ -22,21 +22,21 @@
             <h3>Statistiques de combat</h3>
   
             <div class="stat-item">
-            <span>Force : {{ hero.stats.force }}%</span>
+            <span [style.color]="hero.couleur">Force : {{ hero.stats.force }}%</span>
                 <div class="progress-bar">
                     <div class="fill" [style.width.%]="hero.stats.force" [style.background-color]="hero.couleur"></div>
                 </div>
             </div>
 
             <div class="stat-item">
-            <span>Intelligence : {{ hero.stats.intelligence }}%</span>
+            <span [style.color]="hero.couleur">Intelligence : {{ hero.stats.intelligence }}%</span>
                 <div class="progress-bar">
                     <div class="fill" [style.width.%]="hero.stats.intelligence" [style.background-color]="hero.couleur"></div>
                 </div>
             </div>
 
             <div class="stat-item">
-            <span>Agilité : {{ hero.stats.agilite }}%</span>
+            <span [style.color]="hero.couleur">Agilité : {{ hero.stats.agilite }}%</span>
                 <div class="progress-bar">
                     <div class="fill" [style.width.%]="hero.stats.agilite" [style.background-color]="hero.couleur"></div>
                 </div>
