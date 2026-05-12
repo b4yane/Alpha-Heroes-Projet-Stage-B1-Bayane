@@ -1,0 +1,36 @@
+.footer {
+  background-color: #1a1a1a; 
+  color: #bdc3c7;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 50px; 
+  border-top: 2px solid #5a5a5a; 
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.citation {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.separateur {
+  width: 50px;
+  border: 0;
+  border-top: 1px solid #5a5a5a;
+  margin: 15px auto;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.copyright strong {
+  color: #ffffff;
+}
