@@ -1,3 +1,4 @@
+<div class="galerie-container">
 @for (hero of listeHeros; track hero.nom)
 {
     <article class="galerie-carte" (click)="selectionnerHero(hero)">
@@ -18,5 +19,6 @@
   </article>
 
 }
+</div>
 
 <app-hero-detail [hero]="heroSelectionne"></app-hero-detail>

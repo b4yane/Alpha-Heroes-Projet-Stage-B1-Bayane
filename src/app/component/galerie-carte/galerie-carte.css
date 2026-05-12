@@ -1,3 +1,44 @@
+.galerie-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  gap: 30px; 
+  justify-content: center; 
+  padding: 40px 20px;
+}
+
+
+/*Responsive*/
+@media screen and (min-width:576px) {
+    .galerie-container {
+        width:500px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .galerie-container {
+        width:700px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .galerie-container {
+        width:900px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .galerie-container {
+        width:1100px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .galerie-container {
+        width:1300px;
+    }
+}
+
 .galerie-carte {
   background-color: #ffffff;
   border-radius: 15px;       
