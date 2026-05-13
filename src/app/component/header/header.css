@@ -1,0 +1,28 @@
+.header {
+  background-color: #1a1a1a;
+  color: white;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 3px 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.titre {
+  margin: 0;
+  font-size: 20px;
+  color: #757575;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.social-img {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.2s ease; 
+  padding: 20px 10px;
+}
+
+.social-img:hover {
+  transform: scale(1.1); 
+}
