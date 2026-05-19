@@ -1,1 +1,102 @@
-<p>hero-form works!</p>
+<div class="form-container">
+  <h2>Ajouter un nouveau Super-Héros</h2>
+  
+  <form #monForm="ngForm" (ngSubmit)="monForm.valid && ajouterHero()">
+    
+    <div class="form-group">
+      <label for="nom">Nom du héros * :</label>
+      <input 
+        id="nom" 
+        name="nom" 
+        [(ngModel)]="nouveauHero.nom" 
+        #nomInput="ngModel"
+        required
+        placeholder="Ex: Spider-Man"
+      >
+      <small *ngIf="nomInput.invalid && nomInput.touched" style="color: #e74c3c;">
+        Le nom est obligatoire !
+      </small>
+    </div>
+
+    <div class="form-group">
+      <label for="identite">Identité secrète * :</label>
+      <input 
+        type="text" 
+        id="identite" 
+        name="identiteSecrete" 
+        [(ngModel)]="nouveauHero.identiteSecrete" 
+        #identiteInput="ngModel"
+        required
+        placeholder="Ex: Peter Parker"
+      >
+      <small *ngIf="identiteInput.invalid && identiteInput.touched" style="color: #e74c3c;">
+        L'identité secrète est obligatoire !
+      </small>
+    </div>
+
+    <div class="form-group">
+      <label for="localisation">Ville / Base :</label>
+      <input 
+        type="text" 
+        id="localisation" 
+        name="localisation" 
+        [(ngModel)]="nouveauHero.localisation" 
+        placeholder="Ex: New York (Queens)"
+      >
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description courte :</label>
+      <textarea 
+        id="description" 
+        name="descriptionCourte" 
+        [(ngModel)]="nouveauHero.descriptionCourte" 
+        placeholder="Votre araignée sympa du quartier..."
+      ></textarea>
+    </div>
+    <div class="stats-group">
+  <h3>Statistiques du Héros</h3>
+
+  <div class="form-group">
+    <label for="force">Force : {{ nouveauHero.stats.force }} / 100</label>
+    <input 
+      type="range" 
+      id="force" 
+      name="force" 
+      min="0" 
+      max="100" 
+      [(ngModel)]="nouveauHero.stats.force"
+    >
+  </div>
+
+  <div class="form-group">
+    <label for="intelligence">Intelligence : {{ nouveauHero.stats.intelligence }} / 100</label>
+    <input 
+      type="range" 
+      id="intelligence" 
+      name="intelligence" 
+      min="0" 
+      max="100" 
+      [(ngModel)]="nouveauHero.stats.intelligence"
+    >
+  </div>
+
+  <div class="form-group">
+    <label for="agilite">Agilité : {{ nouveauHero.stats.agilite }} / 100</label>
+    <input 
+      type="range" 
+      id="agilite" 
+      name="agilite" 
+      min="0" 
+      max="100" 
+      [(ngModel)]="nouveauHero.stats.agilite"
+    >
+  </div>
+</div>
+
+    <button type="submit" class="btn-submit" [disabled]="monForm.invalid">
+      Créer le Héros 
+    </button>
+
+  </form>
+</div>
