@@ -68,17 +68,7 @@
   margin-bottom: 15px;
 }
 
-/* Style pour les barres coulissantes */
 input[type="range"] {
-  accent-color: #e74c3c; /* Change la couleur du curseur en rouge */
+  accent-color: #e74c3c; 
   cursor: pointer;
-}
-
-/* Style pour le sélecteur de couleur */
-input[type="color"] {
-  height: 40px;
-  padding: 0;
-  border: none;
-  cursor: pointer;
-  background: none;
 }
